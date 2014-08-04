@@ -1,0 +1,12 @@
+Source: virtualbox-extpack-installer
+Section: net
+Priority: optional
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.3
+
+Package: virtualbox-extpack-installer
+Architecture: all
+Depends: virtualbox-4.3 (>= ${virtualbox:version}), wget
+Description: VirtualBox extpack installer.
+  Downloads and installs the extpack for the associated VirtualBox version.

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+VIRTUALBOX_VERSION=@VIRTUALBOX_VERSION@
+
+case "$1" in
+    configure)
+        EXTPACK_FILE="Oracle_VM_VirtualBox_Extension_Pack-${VIRTUALBOX_VERSION}.vbox-extpack"
+        rm -f "/tmp/${EXTPACK_FILE}*"
+        wget -O "/tmp/${EXTPACK_FILE}" "http://download.virtualbox.org/virtualbox/${VIRTUALBOX_VERSION}/${EXTPACK_FILE}"
+        VBoxManage extpack install --replace "/tmp/$EXTPACK_FILE"
+        rm -f "/tmp/${EXTPACK_FILE}"
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

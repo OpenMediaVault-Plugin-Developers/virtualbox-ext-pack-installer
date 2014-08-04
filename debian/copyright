@@ -1,0 +1,6 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: virtualbox-extpack-installer
+
+Files: *
+Copyright: 2013-2014 OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+License: GPL-3+

@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+
+VIRTUALBOX_VERSION=$(shell cat debian/substvars | grep virtualbox:version= | cut -c 20-)
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_lintian
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol -- -Tdebian/substvars
+	for pkg in $$(dh_listpackages -i); do \
+		sed -i -e "s/@VIRTUALBOX_VERSION@/$(VIRTUALBOX_VERSION)/" debian/$$pkg/DEBIAN/postinst; \
+	done
+	dh_md5sums
+	dh_builddeb
+
+binary-arch:
+# We have nothing to do by default.
+
+build:
+# We have nothing to do by default.
+
+binary: binary-indep binary-arch
+.PHONY: clean binary-indep binary-arch binary install
