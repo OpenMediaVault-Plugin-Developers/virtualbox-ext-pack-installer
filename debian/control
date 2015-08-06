@@ -7,6 +7,6 @@ Standards-Version: 3.9.3
 
 Package: virtualbox-extpack-installer
 Architecture: all
-Depends: virtualbox-4.3 (>= ${virtualbox:version}), wget
+Depends: virtualbox-5.0 (>= ${virtualbox:version}), wget
 Description: VirtualBox extpack installer.
   Downloads and installs the extpack for the associated VirtualBox version.
