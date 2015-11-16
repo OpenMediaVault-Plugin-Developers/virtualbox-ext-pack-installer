@@ -1,3 +1,9 @@
+virtualbox-extpack-installer (5.0.10) stable; urgency=low
+
+  * Update to 5.0.10
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Mon, 16 Nov 2015 12:02:24 -0600
+
 virtualbox-extpack-installer (5.0.2) stable; urgency=low
 
   * Update to 5.0.2
