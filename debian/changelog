@@ -1,58 +1,64 @@
-virtualbox-extpack-installer (5.0.10) stable; urgency=low
+virtualbox-ext-pack-installer (5.0.12) stable; urgency=medium
+
+  * Update to 5.0.12.
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 26 Jan 2016 20:45:03 +0100
+
+virtualbox-ext-pack-installer (5.0.10) stable; urgency=low
 
   * Update to 5.0.10
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Mon, 16 Nov 2015 12:02:24 -0600
 
-virtualbox-extpack-installer (5.0.2) stable; urgency=low
+virtualbox-ext-pack-installer (5.0.2) stable; urgency=low
 
   * Update to 5.0.2
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Thu, 27 Aug 2015 09:37:46 -0500
 
-virtualbox-extpack-installer (5.0.0) stable; urgency=low
+virtualbox-ext-pack-installer (5.0.0) stable; urgency=low
 
   * Update to 5.0.0
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Thu, 06 Aug 2015 07:35:59 -0500
 
-virtualbox-extpack-installer (4.3.28) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.28) stable; urgency=low
 
   * Update to 4.3.28
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Wed, 13 May 2015 18:30:43 -0500
 
-virtualbox-extpack-installer (4.3.22) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.22) stable; urgency=low
 
   * Update to 4.3.22
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 13 Feb 2015 16:09:11 -0600
 
-virtualbox-extpack-installer (4.3.20) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.20) stable; urgency=low
 
   * Update to 4.3.20
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 21 Nov 2014 17:30:50 -0600
 
-virtualbox-extpack-installer (4.3.18) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.18) stable; urgency=low
 
   * Update to 4.3.18
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 14 Oct 2014 06:35:51 -0500
 
-virtualbox-extpack-installer (4.3.16) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.16) stable; urgency=low
 
   * Update to 4.3.16
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Thu, 09 Oct 2014 08:31:18 -0500
 
-virtualbox-extpack-installer (4.3.14) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.14) stable; urgency=low
 
   * Update to 4.3.14
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 02 Aug 2014 14:50:05 +0200
 
-virtualbox-extpack-installer (4.3.13) stable; urgency=low
+virtualbox-ext-pack-installer (4.3.13) stable; urgency=low
 
   * Update to 4.3.13
 

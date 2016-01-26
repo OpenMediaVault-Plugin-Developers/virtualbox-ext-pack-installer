@@ -1,1 +1,1 @@
-Virtualbox extpack installer
+Virtualbox extension pack installer.

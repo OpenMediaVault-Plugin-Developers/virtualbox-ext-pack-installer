@@ -1,12 +1,16 @@
-Source: virtualbox-extpack-installer
-Section: net
+Source: virtualbox-ext-pack-installer
+Section: non-free/misc
 Priority: optional
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Build-Depends: debhelper (>= 9.0.0)
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
 
-Package: virtualbox-extpack-installer
+Package: virtualbox-ext-pack-installer
 Architecture: all
-Depends: virtualbox-5.0 (>= ${virtualbox:version}), wget
-Description: VirtualBox extpack installer.
-  Downloads and installs the extpack for the associated VirtualBox version.
+Conflicts: virtualbox-ext-pack
+Depends: virtualbox (>= ${virtualbox:version}) | virtualbox-5.0 (>= ${virtualbox:version}),
+         wget,
+         ${misc:Depends}
+Description: VirtualBox extension pack installer.
+ Downloads and installs the extension pack for the associated VirtualBox
+ version.

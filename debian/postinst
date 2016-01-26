@@ -2,15 +2,14 @@
 
 set -e
 
-VIRTUALBOX_VERSION=@VIRTUALBOX_VERSION@
 
 case "$1" in
     configure)
-        EXTPACK_FILE="Oracle_VM_VirtualBox_Extension_Pack-${VIRTUALBOX_VERSION}.vbox-extpack"
-        rm -f "/tmp/${EXTPACK_FILE}*"
-        wget -O "/tmp/${EXTPACK_FILE}" "http://download.virtualbox.org/virtualbox/${VIRTUALBOX_VERSION}/${EXTPACK_FILE}"
-        VBoxManage extpack install --replace "/tmp/$EXTPACK_FILE"
-        rm -f "/tmp/${EXTPACK_FILE}"
+        virtualbox_version=@VIRTUALBOX_VERSION@
+        ext_pack_file=$(mktemp -p /tmp Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.XXXXXXXXXX.vbox-extpack)
+        wget -O ${ext_pack_file} "http://download.virtualbox.org/virtualbox/${virtualbox_version}/Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.vbox-extpack"
+        VBoxManage extpack install --replace ${ext_pack_file}
+        rm ${ext_pack_file}
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
