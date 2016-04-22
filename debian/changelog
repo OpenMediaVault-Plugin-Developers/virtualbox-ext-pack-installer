@@ -1,3 +1,9 @@
+virtualbox-ext-pack-installer (5.0.16) stable; urgency=medium
+
+  * Update to 5.0.16.
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 22 Apr 2016 11:53:03 -0600
+
 virtualbox-ext-pack-installer (5.0.14) stable; urgency=medium
 
   * Update to 5.0.14.
