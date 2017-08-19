@@ -8,7 +8,7 @@ case "$1" in
         virtualbox_version=@VIRTUALBOX_VERSION@
         ext_pack_file=$(mktemp -p /tmp Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.XXXXXXXXXX.vbox-extpack)
         wget -O ${ext_pack_file} "http://download.virtualbox.org/virtualbox/${virtualbox_version}/Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.vbox-extpack"
-        VBoxManage extpack install --replace ${ext_pack_file}
+        yes | VBoxManage extpack install --replace ${ext_pack_file}
         rm ${ext_pack_file}
     ;;
 
