@@ -8,7 +8,7 @@ Standards-Version: 3.9.6
 Package: virtualbox-ext-pack-installer
 Architecture: all
 Conflicts: virtualbox-ext-pack
-Depends: virtualbox (>= ${virtualbox:version}) | virtualbox-5.0 (>= ${virtualbox:version}),
+Depends: virtualbox (>= ${virtualbox:version}) | virtualbox-5.2 (>= ${virtualbox:version}),
          wget,
          ${misc:Depends}
 Description: VirtualBox extension pack installer.
